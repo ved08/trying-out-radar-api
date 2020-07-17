@@ -6,7 +6,8 @@ Radar.initialize(apiKey);
 Radar.trackOnce(function(err, result) {
     if (!err) {
       // do something with result.location, result.events, result.user
-      console.log(result.location.latitude, result.location.longitude);
+      alert('Latitude' + result.location.latitude);
+      alert('Longitude' + result.location.longitude)
       Radar.searchPlaces({
         near: {
             latitude: result.location.latitude,
